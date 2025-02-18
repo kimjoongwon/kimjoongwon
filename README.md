@@ -15,6 +15,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+
 <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=kimjoongwon&utm_content=line">
   <img
-    src="https://render.gitanimals.org/lines/kim
+    src="https://render.gitanimals.org/lines/kimjoongwon"
+    width="600"
+    height="120"
+  />
+</a>
+  
