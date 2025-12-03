@@ -6,7 +6,7 @@
 
 ---
 
-### 🚀 운영 중인 서비스
+### 🚀 운영 중인 서비스(미래대비)
 
 #### DevOps & Infrastructure
 - **[Jenkins](https://jenkins.cocdev.co.kr)** - CI/CD 자동화 파이프라인
