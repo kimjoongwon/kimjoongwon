@@ -24,6 +24,17 @@
 
 ---
 
+### 📂 프로젝트 레포지토리
+
+| Repository | Description | Tech Stack |
+|------------|-------------|------------|
+| **[prj-core](https://github.com/kimjoongwon/prj-core)** | 풀스택 예약 플랫폼 모노레포 - 필라테스, 헬스, 요가 등 피트니스 예약 시스템 | Turborepo, NestJS, React, Prisma, PostgreSQL |
+| **[prj-mobile](https://github.com/kimjoongwon/prj-mobile)** | Plate 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 | Expo, React Native, Storybook |
+| **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - Helm과 ArgoCD를 활용한 선언적 배포 | Helm, ArgoCD, Kubernetes, OpenBao |
+| **[prj-llm](https://github.com/kimjoongwon/prj-llm)** | AI/LLM 서비스 API - RAG 기반 질의응답 시스템 | FastAPI, LangChain, ChromaDB, OpenAI |
+
+---
+
 <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=kimjoongwon&utm_content=line">
   <img
     src="https://render.gitanimals.org/lines/kimjoongwon"
