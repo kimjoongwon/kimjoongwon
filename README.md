@@ -28,6 +28,20 @@
 - **[Harbor](https://harbor.cocdev.co.kr)** - 컨테이너 이미지 레지스트리
 - **[Grafana](https://grafana.cocdev.co.kr)** - 모니터링 대시보드
 
+<details>
+  <summary>Jenkins 계정 보기</summary>
+
+  - ID: `admin`
+  - PW: `1qa2ws#ED`
+</details>
+
+<details>
+  <summary>ArgoCD 계정 보기</summary>
+
+  - ID: `admin`
+  - PW: `1qa2ws#ED`
+</details>
+
 #### Production Services
 - **[COC Dev](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
 - **[COC Dev API](https://cocdev.co.kr/api)** 🔄 *리뉴얼 중* - RESTful API 서버
