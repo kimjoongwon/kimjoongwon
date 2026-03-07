@@ -4,6 +4,7 @@
 
 커밋 히스토리가 증명하듯, 꾸준함을 믿습니다. 매일 조금씩이라도 코드를 작성하며 성장하는 개발자가 되고자 합니다.
 
+> 🚀 **개발 철학**: AI 주도 개발을 추구하며, 기획과 디자인까지 AI 중심으로 통합해 압도적인 생산성을 지향합니다.
 > 🔗 **현재 관심 분야**: **블록체인(Web3, Smart Contract)** 과 **AI/LLM(RAG, LangChain)** 기술을 집중적으로 학습하고 있습니다.
 
 ---
@@ -17,6 +18,7 @@
 - **Blockchain**: Ethereum, Solidity, wagmi, Safe(Gnosis)
 
 > 📌 아래 운영 서비스는 모두 **Kubernetes 기반 CI/CD 방식**으로 배포되며, **온프레미스(On-Premise)** 환경에서 구축/운영됩니다.
+> 🔐 인증 방식은 **OIDC(OpenID Connect)** 기반으로 구성되어 있습니다.
 
 ---
 
@@ -48,9 +50,9 @@
 - **[Spring Core Swagger](https://cocdev.co.kr/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)
 - **[LLM API](https://llm.cocdev.co.kr/api)** - AI 언어 모델 서비스
 
-#### Staging Environment (현재 중지)
-- **[STG Plate](https://stg.cocdev.co.kr)** ⏸ *현재 중지* - 스테이징 환경
-- **[STG Plate API](https://stg.cocdev.co.kr/api)** ⏸ *현재 중지* - API 테스트 환경
+#### Staging Environment (토글 OFF)
+- **[STG Plate](https://stg.cocdev.co.kr)** ⏸ *토글 OFF* - 스테이징 환경
+- **[STG Plate API](https://stg.cocdev.co.kr/api)** ⏸ *토글 OFF* - API 테스트 환경
 
 ---
 
