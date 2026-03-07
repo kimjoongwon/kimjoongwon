@@ -43,14 +43,14 @@
 </details>
 
 #### Production Services
-- **[COC Dev](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
-- **[COC Dev API](https://cocdev.co.kr/api)** 🔄 *리뉴얼 중* - RESTful API 서버
+- **[Plate](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
+- **[Plate API](https://cocdev.co.kr/api)** 🔄 *리뉴얼 중* - RESTful API 서버
 - **[Spring Core Swagger](https://cocdev.co.kr/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)
 - **[LLM API](https://llm.cocdev.co.kr/api)** - AI 언어 모델 서비스
 
-#### Staging Environment
-- **[STG COC Dev](https://stg.cocdev.co.kr)** 🔄 *리뉴얼 중* - 스테이징 환경
-- **[STG API](https://stg.cocdev.co.kr/api)** 🔄 *리뉴얼 중* - API 테스트 환경
+#### Staging Environment (현재 중지)
+- **[STG Plate](https://stg.cocdev.co.kr)** ⏸ *현재 중지* - 스테이징 환경
+- **[STG Plate API](https://stg.cocdev.co.kr/api)** ⏸ *현재 중지* - API 테스트 환경
 
 ---
 
