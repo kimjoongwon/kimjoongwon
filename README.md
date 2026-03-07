@@ -45,6 +45,7 @@
 #### Production Services
 - **[COC Dev](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
 - **[COC Dev API](https://cocdev.co.kr/api)** 🔄 *리뉴얼 중* - RESTful API 서버
+- **[Spring Core Swagger](https://cocdev.co.kr/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)
 - **[LLM API](https://llm.cocdev.co.kr/api)** - AI 언어 모델 서비스
 
 #### Staging Environment
