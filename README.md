@@ -44,6 +44,7 @@
 |------------|-------------|------------|
 | **[prj-plate](https://github.com/kimjoongwon/prj-plate)** | 풀스택 예약 플랫폼 모노레포 - 필라테스, 헬스, 요가 등 피트니스 예약 시스템 | Turborepo, NestJS, React, Prisma, PostgreSQL |
 | ↳ **[🔗 Coin](https://github.com/kimjoongwon/prj-plate/tree/main/apps/coin)** | 블록체인 멀티시그 자산 관리 - Safe(Gnosis) 프로토콜 기반 기업용 지갑 | Next.js, wagmi, Ethereum, Solidity |
+| **[prj-spring-core](https://github.com/kimjoongwon/prj-spring-core)** | Spring 기반 백엔드 코어 프로젝트 | Spring Boot, JPA, MySQL |
 | **[prj-mobile](https://github.com/kimjoongwon/prj-mobile)** | Plate 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 | Expo, React Native, Storybook |
 | **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - Helm과 ArgoCD를 활용한 선언적 배포 | Helm, ArgoCD, Kubernetes, OpenBao |
 | **[prj-llm](https://github.com/kimjoongwon/prj-llm)** | AI/LLM 서비스 API - RAG 기반 질의응답 시스템 | FastAPI, LangChain, ChromaDB, OpenAI |
