@@ -24,7 +24,7 @@
 
 #### DevOps & Infrastructure
 - **[Jenkins](https://jenkins.cocdev.co.kr)** - CI/CD 자동화 파이프라인
-- **[OpenBao](https://openbao.cocdev.co.kr)** - 시크릿 관리 시스템
+- **[OpenBao](https://openbao.cocdev.co.kr)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
 - **[Harbor](https://harbor.cocdev.co.kr)** - 컨테이너 이미지 레지스트리
 - **[Grafana](https://grafana.cocdev.co.kr)** - 모니터링 대시보드
 
