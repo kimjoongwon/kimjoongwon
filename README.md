@@ -8,6 +8,18 @@
 
 ---
 
+### 🧰 프로젝트 기술 스택
+
+- **Backend**: NestJS, FastAPI
+- **Frontend**: React, Next.js, Expo(React Native)
+- **Infrastructure**: Kubernetes, Jenkins, ArgoCD, Helm, Harbor, OpenBao
+- **Database & AI**: PostgreSQL, Prisma, LangChain, ChromaDB, OpenAI
+- **Blockchain**: Ethereum, Solidity, wagmi, Safe(Gnosis)
+
+> 📌 아래 운영 서비스는 모두 **Kubernetes 기반 CI/CD 방식**으로 배포되며, **온프레미스(On-Premise)** 환경에서 구축/운영됩니다.
+
+---
+
 ### 🚀 운영 중인 서비스(미래대비겸 학습용)
 
 #### DevOps & Infrastructure
