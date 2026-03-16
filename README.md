@@ -26,6 +26,7 @@
 
 #### DevOps & Infrastructure
 - **[Jenkins](https://jenkins.cocdev.co.kr)** - CI/CD 자동화 파이프라인
+- **[ArgoCD](https://argocd.cocdev.co.kr)** - GitOps 배포 대시보드
 - **[OpenBao](https://openbao.cocdev.co.kr)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
 - **[Harbor](https://harbor.cocdev.co.kr)** - 컨테이너 이미지 레지스트리
 - **[Grafana](https://grafana.cocdev.co.kr)** - 모니터링 대시보드
@@ -40,6 +41,8 @@
 <details>
   <summary>ArgoCD 계정 보기</summary>
 
+  - URL: `https://argocd.cocdev.co.kr/`
+  - 경로: 별도 서브패스 없이 루트(`/`)로 접속
   - ID: `admin`
   - PW: `1qa2ws#ED`
 </details>
@@ -47,6 +50,7 @@
 #### Production Services
 - **[Plate](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
 - **[Plate API](https://cocdev.co.kr/api)** 🔄 *리뉴얼 중* - RESTful API 서버
+- **[IDP API Swagger](https://idp.cocdev.co.kr/api)** - OIDC 인증 서버 API 문서
 - **[Spring Core Swagger](https://cocdev.co.kr/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)
 - **[LLM API](https://llm.cocdev.co.kr/api)** - AI 언어 모델 서비스
 
