@@ -48,7 +48,7 @@
 </details>
 
 #### Production Services
-- **[Plate](https://cocdev.co.kr)** 🔄 *리뉴얼 중* - 메인 서비스
+- ~~**[Plate](https://cocdev.co.kr)** - 메인 서비스~~ `미사용 중`
 - **[Core API](https://cocdev.co.kr/api)** - RESTful API 서버
 - **[IDP API](https://idp.cocdev.co.kr/api)** - OIDC 인증 서버 API 문서
 - ~~**[Spring Core Swagger](https://cocdev.co.kr/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)~~ `미사용 중`
