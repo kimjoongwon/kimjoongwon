@@ -44,8 +44,8 @@
 <details>
   <summary>Jenkins 계정 보기</summary>
 
-  - ID: `admin`
-  - PW: `1qa2ws#ED`
+  - I: `admin`
+  - P: `1qa2ws#ED`
 </details>
 
 <details>
@@ -53,8 +53,8 @@
 
   - URL: `https://argocd.cocdev.co.kr/`
   - 경로: 별도 서브패스 없이 루트(`/`)로 접속
-  - ID: `admin`
-  - PW: `1qa2ws#ED`
+  - I: `admin`
+  - P: `1qa2ws#ED`
 </details>
 
 <details>
@@ -63,8 +63,8 @@
   - URL: `https://db.cocdev.co.kr/`
   - Host: `plate-db-prod`
   - Port: `5432`
-  - Username: `plate_prod`
-  - Password: `1qa2ws#ED`
+  - I: `plate_prod`
+  - P: `1qa2ws#ED`
 </details>
 
 #### Production Services
