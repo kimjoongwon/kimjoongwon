@@ -39,6 +39,7 @@
 - **[OpenBao](https://openbao.cocdev.co.kr)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
 - **[Harbor](https://harbor.cocdev.co.kr)** - 컨테이너 이미지 레지스트리
 - **[Grafana](https://grafana.cocdev.co.kr)** - 모니터링 대시보드
+- **[pgAdmin](https://db.cocdev.co.kr)** - PostgreSQL 관리 콘솔
 
 <details>
   <summary>Jenkins 계정 보기</summary>
@@ -54,6 +55,16 @@
   - 경로: 별도 서브패스 없이 루트(`/`)로 접속
   - ID: `admin`
   - PW: `1qa2ws#ED`
+</details>
+
+<details>
+  <summary>pgAdmin / PostgreSQL 접속 정보 보기</summary>
+
+  - URL: `https://db.cocdev.co.kr/`
+  - Host: `plate-db-prod`
+  - Port: `5432`
+  - Username: `plate_prod`
+  - Password: `1qa2ws#ED`
 </details>
 
 #### Production Services
