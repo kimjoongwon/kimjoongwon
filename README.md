@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+> ⚠️ **안내**
+> 이 저장소에 적힌 운영 환경은 개인 집컴퓨터에서 구동하는 홈랩 성격의 **온프레미스(On-Premise)** 환경입니다.  
+> 상용 고객 시스템이나 외부 기업망이 아니라 개인 실험/학습용 인프라이므로, 일반적인 운영 보안 우려와는 전제가 다릅니다.
+
 **코드 품질을 중요시하는 개발자입니다.** 클린 코드와 신중한 아키텍처 설계를 통해 유지보수 가능하고 안정적이며 확장 가능한 소프트웨어를 만듭니다.
 
 커밋 히스토리가 증명하듯, 꾸준함을 믿습니다. 매일 조금씩이라도 코드를 작성하며 성장하는 개발자가 되고자 합니다.
@@ -84,8 +88,7 @@
 
 | Repository | Description | Tech Stack |
 |------------|-------------|------------|
-| **[prj-plate](https://github.com/kimjoongwon/prj-plate)** | 풀스택 예약 플랫폼 모노레포 - 필라테스, 헬스, 요가 등 피트니스 예약 시스템 | Turborepo, NestJS, React, Prisma, PostgreSQL |
-| ↳ **[🔗 Coin](https://github.com/kimjoongwon/prj-plate/tree/main/apps/coin)** | 블록체인 멀티시그 자산 관리 - Safe(Gnosis) 프로토콜 기반 기업용 지갑 | Next.js, wagmi, Ethereum, Solidity |
+| **prj-plate (Private)** | 비공개 프로젝트 - AI 주도 원샷 개발을 추구하는 서비스 | 비공개 |
 | **[prj-spring-core](https://github.com/kimjoongwon/prj-spring-core)** | Spring 기반 백엔드 코어 프로젝트 | Spring Boot, JPA, MySQL |
 | **[prj-mobile](https://github.com/kimjoongwon/prj-mobile)** | Plate 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 | Expo, React Native, Storybook |
 | **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - Helm과 ArgoCD를 활용한 선언적 배포 | Helm, ArgoCD, Kubernetes, OpenBao |
