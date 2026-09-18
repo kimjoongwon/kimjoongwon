@@ -1,0 +1,79 @@
+## Hi there 👋
+
+> ⚠️ **안내**
+> 이 저장소에 적힌 운영 환경은 개인 집컴퓨터에서 구동하는 홈랩 성격의 **온프레미스(On-Premise)** 환경입니다.  
+> 상용 고객 시스템이나 외부 기업망이 아니라 개인 실험/학습용 인프라이므로, 일반적인 운영 보안 우려와는 전제가 다릅니다.
+
+**코드 품질을 중요시하는 개발자입니다.** 클린 코드와 신중한 아키텍처 설계를 통해 유지보수 가능하고 안정적이며 확장 가능한 소프트웨어를 만듭니다.
+
+커밋 히스토리가 증명하듯, 꾸준함을 믿습니다. 매일 조금씩이라도 코드를 작성하며 성장하는 개발자가 되고자 합니다.
+
+> 🚀 **개발 철학**  
+> Codex, Claude 같은 AI 도구를 단순 보조가 아니라 개발 시스템의 일부로 활용합니다.  
+> 기획, 설계, 구현, 테스트, 배포 전반의 생산성을 끌어올리는 방식을 지향합니다.
+>
+> 🤖 **현재 집중 주제**  
+> 여러 에이전트를 역할별로 분리해 하나의 서비스 단위를 병렬로 설계, 구현, 검증하는  
+> 개발 방식과 워크플로를 연구하고 있습니다.
+>
+> 🔗 **현재 관심 분야**  
+> **블록체인(Web3, Smart Contract)**, **AI/LLM(RAG, LangChain)**,  
+> 그리고 이를 실제 서비스/인프라 운영에 연결하는 자동화에 집중하고 있습니다.
+
+---
+
+### 🧰 프로젝트 기술 스택
+
+- **Backend**: NestJS, FastAPI
+- **Frontend**: React, Next.js, Expo(React Native)
+- **Infrastructure**: Kubernetes, Jenkins, ArgoCD, Helm, Harbor, OpenBao
+- **Database & AI**: PostgreSQL, Prisma, LangChain, ChromaDB, OpenAI
+- **Blockchain**: Ethereum, Solidity, wagmi, Safe(Gnosis)
+
+> 📌 아래 운영 서비스는 모두 **Kubernetes 기반 CI/CD 방식**으로 배포되며, **온프레미스(On-Premise)** 환경에서 구축/운영됩니다.
+> 🔐 인증 방식은 **OIDC(OpenID Connect)** 기반으로 구성되어 있습니다.
+
+---
+
+### 🚀 운영 중인 서비스(미래대비겸 학습용)
+
+#### DevOps & Infrastructure
+- **[Jenkins](https://jenkins.onjitda.com)** - CI/CD 자동화 파이프라인
+- **[ArgoCD](https://argocd.onjitda.com)** - GitOps 배포 대시보드
+- **[OpenBao](https://openbao.onjitda.com)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
+- **[Harbor](https://harbor.onjitda.com)** - 컨테이너 이미지 레지스트리
+- **[Grafana](https://grafana.onjitda.com)** - 모니터링 대시보드
+- **[pgAdmin](https://db.onjitda.com)** - PostgreSQL 관리 콘솔
+
+#### Production Services
+- ~~**[Plate](https://onjitda.com)** - 메인 서비스~~ `미사용 중`
+- **[Core API](https://onjitda.com/api)** - RESTful API 서버
+- **[IDP API](https://idp.onjitda.com/api)** - OIDC 인증 서버 API 문서
+- ~~**[Spring Core Swagger](https://onjitda.com/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)~~ `미사용 중`
+- ~~**[LLM API](https://llm.onjitda.com/api)** - AI 언어 모델 서비스~~ `미사용 중`
+
+#### Staging Environment (토글 OFF)
+- **[STG Plate](https://stg.onjitda.com)** ⏸ *토글 OFF* - 스테이징 환경
+- **[STG Plate API](https://stg.onjitda.com/api)** ⏸ *토글 OFF* - API 테스트 환경
+
+---
+
+### 📂 프로젝트 레포지토리
+
+| Repository | Description | Tech Stack |
+|------------|-------------|------------|
+| **prj-plate (Private)** | 비공개 프로젝트 - AI 주도 원샷 개발을 추구하는 서비스 | 비공개 |
+| **[prj-spring-core](https://github.com/kimjoongwon/prj-spring-core)** | Spring 기반 백엔드 코어 프로젝트 | Spring Boot, JPA, MySQL |
+| **[prj-mobile](https://github.com/kimjoongwon/prj-mobile)** | Plate 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 | Expo, React Native, Storybook |
+| **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - Helm과 ArgoCD를 활용한 선언적 배포 | Helm, ArgoCD, Kubernetes, OpenBao |
+| **[prj-llm](https://github.com/kimjoongwon/prj-llm)** | AI/LLM 서비스 API - RAG 기반 질의응답 시스템 | FastAPI, LangChain, ChromaDB, OpenAI |
+
+---
+
+<a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=kimjoongwon&utm_content=farm">
+<img
+  src="https://render.gitanimals.org/farms/kimjoongwon"
+  width="600"
+  height="300"
+/>
+</a>
