@@ -69,7 +69,7 @@
 | Repository | Description | Tech Stack |
 |------------|-------------|------------|
 | **prj-plate (Private)** | 비공개 프로젝트 - AI 주도 원샷 개발을 추구하는 서비스 | 비공개 |
-| **prj-core (Private)** | 풀스택 예약 플랫폼 모노레포 - Core API·Admin·Proposal·OIDC IDP·모바일 앱을 apps/packages 계층 구조로 관리 | NestJS 11, React 19, Prisma, Turborepo, pnpm |
+| **[prj-core](https://github.com/kimjoongwon/prj-core)** | 풀스택 예약 플랫폼 모노레포 - Core API·Admin·Proposal·OIDC IDP·모바일 앱을 apps/packages 계층 구조로 관리 | NestJS 11, React 19, Prisma, Turborepo, pnpm |
 | **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - 3계층 Helm 차트 + App-of-Apps(ArgoCD) + 관측 스택(Loki·Tempo·OTel·Alloy) 운영 | Helm, ArgoCD, Kubernetes, OpenBao, Cloudflare Tunnel |
 | **[prj-deploy](https://github.com/kimjoongwon/prj-deploy)** | GitOps 이미지 태그 저장소 - Jenkins 빌드가 커밋 SHA 태그를 범프하면 ArgoCD multi-source로 자동 배포 | GitOps, ArgoCD, Jenkins |
 | **prj-mobile (Private)** | 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 + Detox E2E | Expo, React Native, Storybook |
