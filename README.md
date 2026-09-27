@@ -25,12 +25,15 @@
 ### 🧰 프로젝트 기술 스택
 
 - **Backend**: NestJS, FastAPI
-- **Frontend**: React, Next.js, Expo(React Native)
-- **Infrastructure**: Kubernetes, Jenkins, ArgoCD, Helm, Harbor, OpenBao
-- **Database & AI**: PostgreSQL, Prisma, LangChain, ChromaDB, OpenAI
+- **Frontend**: React 19, Vite, TanStack Router/Query, Expo(React Native)
+- **Monorepo & Tooling**: Turborepo, pnpm, Biome, Storybook
+- **Infrastructure**: Kubernetes, ArgoCD, Jenkins, Helm, Harbor, OpenBao, Cloudflare Tunnel
+- **Observability**: Grafana, Loki, Tempo, OpenTelemetry(Collector/Alloy)
+- **Database & AI**: PostgreSQL, Redis, Prisma, LangChain, ChromaDB, OpenAI
 - **Blockchain**: Ethereum, Solidity, wagmi, Safe(Gnosis)
 
-> 📌 아래 운영 서비스는 모두 **Kubernetes 기반 CI/CD 방식**으로 배포되며, **온프레미스(On-Premise)** 환경에서 구축/운영됩니다.
+> 📌 아래 운영 서비스는 모두 **Kubernetes 기반 CI/CD(GitOps) 방식**으로 배포되며, **온프레미스(On-Premise)** 홈랩 클러스터에서 구축/운영됩니다.
+> 🌐 외부 노출은 **Cloudflare Tunnel** + cert-manager(TLS)로 구성되어 있습니다.
 > 🔐 인증 방식은 **OIDC(OpenID Connect)** 기반으로 구성되어 있습니다.
 
 ---
@@ -38,17 +41,20 @@
 ### 🚀 운영 중인 서비스(미래대비겸 학습용)
 
 #### DevOps & Infrastructure
-- **[Jenkins](https://jenkins.onjitda.com)** - CI/CD 자동화 파이프라인
-- **[ArgoCD](https://argocd.onjitda.com)** - GitOps 배포 대시보드
+- **[Jenkins](https://jenkins.onjitda.com)** - CI/CD 파이프라인 - 이미지 빌드 → Harbor 푸시 → GitOps 태그 범프 자동화
+- **[ArgoCD](https://argocd.onjitda.com)** - GitOps 배포 대시보드 (App-of-Apps, prod-only 운영)
 - **[OpenBao](https://openbao.onjitda.com)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
-- **[Harbor](https://harbor.onjitda.com)** - 컨테이너 이미지 레지스트리
-- **[Grafana](https://grafana.onjitda.com)** - 모니터링 대시보드
+- **[Harbor](https://harbor.onjitda.com)** - 프라이빗 컨테이너 이미지 레지스트리
+- **[Grafana](https://grafana.onjitda.com)** - 모니터링 대시보드 (Loki·Tempo·OTel·Alloy 관측 스택 연동)
 - **[pgAdmin](https://db.onjitda.com)** - PostgreSQL 관리 콘솔
 
 #### Production Services
-- ~~**[Plate](https://onjitda.com)** - 메인 서비스~~ `미사용 중`
+- **[Admin Web](https://onjitda.com)** - 메인 진입 웹 애플리케이션
+- **[Proposal Web](https://onjitda.com/proposal)** - 퍼블릭 제안 웹
 - **[Core API](https://onjitda.com/api)** - RESTful API 서버
+- **[IDP Web](https://idp.onjitda.com)** - OIDC 인증 서버 웹 (로그인/동의 화면)
 - **[IDP API](https://idp.onjitda.com/api)** - OIDC 인증 서버 API 문서
+- **[Storybook](https://onjitda.com/story)** - 디자인 시스템 컴포넌트 문서
 - ~~**[Spring Core Swagger](https://onjitda.com/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)~~ `미사용 중`
 - ~~**[LLM API](https://llm.onjitda.com/api)** - AI 언어 모델 서비스~~ `미사용 중`
 
@@ -63,9 +69,11 @@
 | Repository | Description | Tech Stack |
 |------------|-------------|------------|
 | **prj-plate (Private)** | 비공개 프로젝트 - AI 주도 원샷 개발을 추구하는 서비스 | 비공개 |
+| **prj-core (Private)** | 풀스택 예약 플랫폼 모노레포 - Core API·Admin·Proposal·OIDC IDP·모바일 앱을 apps/packages 계층 구조로 관리 | NestJS 11, React 19, Prisma, Turborepo, pnpm |
+| **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - 3계층 Helm 차트 + App-of-Apps(ArgoCD) + 관측 스택(Loki·Tempo·OTel·Alloy) 운영 | Helm, ArgoCD, Kubernetes, OpenBao, Cloudflare Tunnel |
+| **[prj-deploy](https://github.com/kimjoongwon/prj-deploy)** | GitOps 이미지 태그 저장소 - Jenkins 빌드가 커밋 SHA 태그를 범프하면 ArgoCD multi-source로 자동 배포 | GitOps, ArgoCD, Jenkins |
+| **prj-mobile (Private)** | 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 + Detox E2E | Expo, React Native, Storybook |
 | **[prj-spring-core](https://github.com/kimjoongwon/prj-spring-core)** | Spring 기반 백엔드 코어 프로젝트 | Spring Boot, JPA, MySQL |
-| **[prj-mobile](https://github.com/kimjoongwon/prj-mobile)** | Plate 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 | Expo, React Native, Storybook |
-| **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - Helm과 ArgoCD를 활용한 선언적 배포 | Helm, ArgoCD, Kubernetes, OpenBao |
 | **[prj-llm](https://github.com/kimjoongwon/prj-llm)** | AI/LLM 서비스 API - RAG 기반 질의응답 시스템 | FastAPI, LangChain, ChromaDB, OpenAI |
 
 ---
