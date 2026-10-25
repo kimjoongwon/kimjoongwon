@@ -42,7 +42,7 @@
 
 #### DevOps & Infrastructure
 - **[Jenkins](https://jenkins.onjitda.com)** - CI/CD 파이프라인 - 이미지 빌드 → Harbor 푸시 → GitOps 태그 범프 자동화
-- **[ArgoCD](https://argocd.onjitda.com)** - GitOps 배포 대시보드 (App-of-Apps, prod-only 운영)
+- **[ArgoCD](https://argocd.onjitda.com)** - GitOps 배포 대시보드 (App-of-Apps, prod·stg 2환경 운영)
 - **[OpenBao](https://openbao.onjitda.com)** - HashiCorp Vault 포크 기반 시크릿 관리 시스템
 - **[Harbor](https://harbor.onjitda.com)** - 프라이빗 컨테이너 이미지 레지스트리
 - **[Grafana](https://grafana.onjitda.com)** - 모니터링 대시보드 (Loki·Tempo·OTel·Alloy 관측 스택 연동)
@@ -54,13 +54,17 @@
 - **[Core API](https://onjitda.com/api)** - RESTful API 서버
 - **[IDP Web](https://idp.onjitda.com)** - OIDC 인증 서버 웹 (로그인/동의 화면)
 - **[IDP API](https://idp.onjitda.com/api)** - OIDC 인증 서버 API 문서
+- **[Design Web](https://onjitda.com/design)** - 디자인 학습 자료 디렉터리 · UI 키트(톤앤매너 토큰) 갤러리
+- **[Live Commerce](https://onjitda.com/live)** - 라이브 커머스 시연 (FLV/HLS 실시간 스트리밍)
 - **[Storybook](https://onjitda.com/story)** - 디자인 시스템 컴포넌트 문서
 - ~~**[Spring Core Swagger](https://onjitda.com/spring/swagger-ui/index.html)** - Spring Core API 문서(운영)~~ `미사용 중`
 - ~~**[LLM API](https://llm.onjitda.com/api)** - AI 언어 모델 서비스~~ `미사용 중`
 
-#### Staging Environment (토글 OFF)
-- **[STG Plate](https://stg.onjitda.com)** ⏸ *토글 OFF* - 스테이징 환경
-- **[STG Plate API](https://stg.onjitda.com/api)** ⏸ *토글 OFF* - API 테스트 환경
+#### Staging Environment (가동 중)
+- **[STG Admin Web](https://stg.onjitda.com)** - 스테이징 웹 (admin-web)
+- **[STG Plate API](https://stg.onjitda.com/api)** - API 테스트 환경 (core-api · idp-api)
+- **[STG IDP](https://idp-stg.onjitda.com)** - OIDC 인증 스테이징 (idp-web · idp-api)
+- **[Dolmen Demo](https://stg.onjitda.com/dolmen)** - AI 에이전트(hello-agents) 시연 앱 (FastAPI)
 
 ---
 
@@ -69,7 +73,7 @@
 | Repository | Description | Tech Stack |
 |------------|-------------|------------|
 | **prj-plate (Private)** | 비공개 프로젝트 - AI 주도 원샷 개발을 추구하는 서비스 | 비공개 |
-| **[prj-core](https://github.com/kimjoongwon/prj-core)** | 풀스택 예약 플랫폼 모노레포 - Core API·Admin·Proposal·OIDC IDP·모바일 앱을 apps/packages 계층 구조로 관리 | NestJS 11, React 19, Prisma, Turborepo, pnpm |
+| **[prj-core](https://github.com/kimjoongwon/prj-core)** | 풀스택 플랫폼 모노레포(공개) - core/idp API·admin/idp/proposal/design/live 웹·Storybook·Expo 모바일을 apps/packages 계층으로 관리. ULID 공개 식별자·OIDC 멀티테넌트 | Next 16, React 19.2, NestJS 12, Prisma 7, Tailwind 4, HeroUI, Expo, Turborepo |
 | **[prj-devops](https://github.com/kimjoongwon/prj-devops)** | GitOps 기반 Kubernetes 배포 인프라 - 3계층 Helm 차트 + App-of-Apps(ArgoCD) + 관측 스택(Loki·Tempo·OTel·Alloy) 운영 | Helm, ArgoCD, Kubernetes, OpenBao, Cloudflare Tunnel |
 | **[prj-deploy](https://github.com/kimjoongwon/prj-deploy)** | GitOps 이미지 태그 저장소 - Jenkins 빌드가 커밋 SHA 태그를 범프하면 ArgoCD multi-source로 자동 배포 | GitOps, ArgoCD, Jenkins |
 | **prj-mobile (Private)** | 모바일 애플리케이션 - Expo 기반 크로스 플랫폼 앱 + Detox E2E | Expo, React Native, Storybook |
